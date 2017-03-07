@@ -1,0 +1,16 @@
+AppBundle\Entity\PositiveWords:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\PositiveWordsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        word:
+            type: string
+            length: '25'
+            unique: true
+    lifecycleCallbacks: {  }

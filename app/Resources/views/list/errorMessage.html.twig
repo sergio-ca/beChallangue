@@ -1,0 +1,32 @@
+{# app/Resources/views/errorMessage.html.twig #}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    {% stylesheets 'bundles/app/css/*' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset('bundles/app/css/styles.css') }}" />
+    {% endstylesheets %}
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li>
+            <a href="http://localhost:8000/create/review">Create review</a>
+        </li>
+        <li>
+            <a href="http://localhost:8000/list/review">Review list</a>
+        </li>
+        <li>
+            <a href="http://localhost:8000/create/criteria">Create criteria</a>
+        </li>
+        <li>
+            <a href="http://localhost:8000/list/criteria">Criteria list</a>
+        </li>
+    </ul>
+    <hr class="style13"/>
+</div>
+<div>
+    <h1>Oops! Something went wrong, please try again or contact us</h1>
+</div>
+</body>

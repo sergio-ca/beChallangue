@@ -1,0 +1,15 @@
+AppBundle\Entity\csv:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\csvRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        csvFile:
+            type: string
+            length: '255'
+    lifecycleCallbacks: {  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criteria list</title>
+    <link rel="stylesheet" href="{{ asset('bundles/app/css/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/app/css/styles.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/app/css/ui.jqgrid.css') }}" />
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li>
+            <a href="http://localhost:8000/create/review">Create review</a>
+        </li>
+        <li>
+            <a href="http://localhost:8000/list/review">Review list</a>
+        </li>
+        <li>
+            <a href="http://localhost:8000/create/criteria">Create criteria</a>
+        </li>
+        <li>
+            <a href="http://localhost:8000/list/criteria">Criteria list</a>
+        </li>
+    </ul>
+    <hr class="style13"/>
+</div>
+<div id="show_criteria">
+    <table id="topics" ><h2>Topics</h2></table>
+    <table id="positive" ><h2>Positive Words</h2></table>
+    <table id="negative" ><h2>Negative Words</h2></table>
+
+    <script src="{{ asset('bundles/app/js/jquery.js') }}"></script>
+    <script src="{{ asset('bundles/app/js/jquery.jqGrid.min.js') }}"></script>
+    <script src="{{ asset('bundles/app/js/i18n/grid.locale-en.js') }}"></script>
+    <div id='pagerTopics'></div>
+    <div id='pagerPositive'></div>
+    <div id='pagerNegative'></div>
+
+
+    <script language="javascript">
+        $(function() {
+            $("#topics").jqGrid({
+                url: "{{ path('_grid_topics_content') }}"
+                ,height: "auto"
+                ,autowidth:true
+                ,rowNum: 'ALL'
+                , colModel: [
+                    {index:'ID',width:10},
+                    {index:'Word'}
+                ]
+                , colNames: ['ID', 'Word']
+                ,pager: '#pagerTopics'
+                , datatype: 'json'
+            });
+        });
+    </script>
+    <script language="javascript">
+    $(function() {
+            $("#positive").jqGrid({
+                url: "{{ path('_grid_positive_content') }}"
+                ,height: "auto"
+                ,autowidth:true
+                ,rowNum: 'ALL'
+                , colModel: [
+                    {index:'ID',width:10},
+                    {index:'Word'}
+                ]
+                , colNames: ['ID', 'Word']
+                ,pager: '#pagerPositive'
+                ,datatype: 'json'
+            });
+        });
+    </script>
+    <script language="javascript">
+        $(function() {
+            $("#negative").jqGrid({
+                url: "{{ path('_grid_negative_content') }}"
+                ,height: "auto"
+                ,autowidth:true
+                ,rowNum: 'ALL'
+                , colModel: [
+                    {index:'ID',width:10},
+                    {index:'Word'}
+                ]
+                , colNames: ['ID', 'Word']
+                ,pager: '#pagerNegative'
+                , datatype: 'json'
+            });
+        });
+    </script>
+</div>
+
+</body>
+</html>

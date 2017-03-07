@@ -1,0 +1,203 @@
+
+body {
+    background: #EFEFEF;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.menu{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+input[type=submit]:hover:not(.active) {
+    background-color: #111;
+}
+input[type=reset] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+input[type=reset]:hover:not(.active) {
+    background-color: #111;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+input[type=content], select {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+#form_submit {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+#form_submit:hover:not(.active) {
+    background-color: #111;
+}
+
+#user_send {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+#user_send:hover:not(.active) {
+    background-color: #111;
+}
+
+#header {
+    background-color:#EFEFEF;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    text-align:center;
+    padding:5px;
+}
+
+.button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover:not(.active) {
+    background-color: #111;
+}
+
+#user_file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+label[for=user_file]{
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+ }
+label[for=user_file]:hover:not(.active) {
+    background-color: #111;
+}
+
+#user_fileinputfile:focus + label,
+#user_file + label:hover {
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+li a {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.principal {
+    background-color: #4CAF50;
+}
+
+
+hr.style13 {
+    margin-top: 0px;
+    border: 0;
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(51, 51, 51, 1), rgba(0, 0, 0, 0));
+}
+
+
+
+

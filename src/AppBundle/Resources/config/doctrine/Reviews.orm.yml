@@ -1,0 +1,20 @@
+AppBundle\Entity\Reviews:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\ReviewsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        text:
+            type: text
+        matches:
+            type: text
+            nullable: true
+        score:
+            type: integer
+            nullable: true
+    lifecycleCallbacks: {  }

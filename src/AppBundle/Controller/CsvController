@@ -1,0 +1,34 @@
+<?php
+// src/AppBundle/Controller/CsvController.php
+namespace AppBundle\Controller;
+
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
+
+class CsvController extends  Controller {
+
+    /**
+    * @Route("/create/review.csv")
+    */
+    function read_csv ($file) {
+        $data = array();
+        if (($gestor = fopen("$file", "r")) !== FALSE) {
+            while (($datos = fgetcsv($gestor, ";")) !== FALSE) {
+                array_push($data, $datos[0]);
+            }
+            fclose($gestor);
+        }
+        if (iseet($data)) {
+           return $this->insert($data);
+        } else {
+            return $data;
+        }
+    }
+
+    function insert($data) {
+        //load funcion de insert
+        //llamar a funcion de insert pasando el $data
+    }
+
+}

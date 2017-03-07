@@ -1,0 +1,16 @@
+AppBundle\Entity\Topics:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\TopicsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        word:
+            type: string
+            length: '25'
+            unique: true
+    lifecycleCallbacks: {  }
